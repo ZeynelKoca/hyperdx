@@ -1,5 +1,51 @@
 # @hyperdx/app
 
+## 2.23.0
+
+### Minor Changes
+
+- a15122b: feat: new team setting for number of filters to fetch
+- 941d045: feat: support sample-weighted aggregations for sampled trace data
+
+### Patch Changes
+
+- bfc9381: feat: Group Dashboards and Searches by Tag
+- e6a0455: fix: Properly enable line wrap behavior in JSON viewer by default
+- 518bda7: feat: Add dashboard template gallery
+- 9852e9b: perf: Defer expensive hooks in collapsed filter groups and virtualize nested filter lists
+- 5e5c6a9: fix: slider thumb and mark styling not applying theme tokens
+
+  - Move slider thumb styling from classNames to inline styles to fix CSS specificity issue where Mantine defaults override theme tokens
+  - Add !important to slider mark styles to ensure token-based colors apply
+  - Fix vertical centering of 6px slider mark dots within the 8px track
+  - Remove broken translateX/translateY nudge that misaligned marks
+
+- 4e54d85: fix: show Map sub-fields in facet panel for non-LowCardinality value types
+- 53ba1e3: feat: Add favoriting for dashboards and saved searches
+- b7581db: feat: Add more chart display units
+- 05a1b76: fix: optimize order by should factor in wider cases, including the
+  default otel_traces
+- 48a8d32: fix: Fixed bug preventing clicking into rows with nullable date types (and other misc type) columns.
+- a55b151: fix: render clickhouse keywords properly in codemirror
+- 9cfb7e9: fix: move help menu from footer to main nav links
+- 308da30: feat: Add $\_\_sourceTable macro
+- e5c7fdf: feat: Add saved searches listing page
+- 0cc1295: fix: Add source schema preview to SQL Charts and Trace Panel
+- 1b77eab: fix: replace sidebar collapse icons to align with ClickHouse collapse patterns
+- 853da16: fix: Fix flaky E2E tests
+- bb24994: feat: use 1 minute window for searches
+- Updated dependencies [518bda7]
+- Updated dependencies [4e54d85]
+- Updated dependencies [53ba1e3]
+- Updated dependencies [b7581db]
+- Updated dependencies [48a8d32]
+- Updated dependencies [a15122b]
+- Updated dependencies [a55b151]
+- Updated dependencies [308da30]
+- Updated dependencies [e5c7fdf]
+- Updated dependencies [941d045]
+  - @hyperdx/common-utils@0.17.0
+
 ## 2.22.1
 
 ### Patch Changes
